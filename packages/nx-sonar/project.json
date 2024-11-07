@@ -1,35 +1,35 @@
 {
-  "name": "nx-sonarqube",
+  "name": "nx-sonar",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "packages/nx-sonarqube/src",
+  "sourceRoot": "packages/nx-sonar/src",
   "projectType": "library",
   "targets": {
     "build": {
       "executor": "@nx/js:tsc",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "outputPath": "dist/packages/nx-sonarqube",
-        "main": "packages/nx-sonarqube/src/index.ts",
-        "tsConfig": "packages/nx-sonarqube/tsconfig.lib.json",
+        "outputPath": "dist/packages/nx-sonar",
+        "main": "packages/nx-sonar/src/index.ts",
+        "tsConfig": "packages/nx-sonar/tsconfig.lib.json",
         "assets": [
-          "packages/nx-sonarqube/*.md",
+          "packages/nx-sonar/*.md",
           {
-            "input": "./packages/nx-sonarqube/src",
+            "input": "./packages/nx-sonar/src",
             "glob": "**/!(*.ts)",
             "output": "./src"
           },
           {
-            "input": "./packages/nx-sonarqube/src",
+            "input": "./packages/nx-sonar/src",
             "glob": "**/*.d.ts",
             "output": "./src"
           },
           {
-            "input": "./packages/nx-sonarqube",
+            "input": "./packages/nx-sonar",
             "glob": "generators.json",
             "output": "."
           },
           {
-            "input": "./packages/nx-sonarqube",
+            "input": "./packages/nx-sonar",
             "glob": "executors.json",
             "output": "."
           }
@@ -42,9 +42,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/packages/nx-sonarqube"],
+      "outputs": ["{workspaceRoot}/coverage/packages/nx-sonar"],
       "options": {
-        "jestConfig": "packages/nx-sonarqube/jest.config.ts",
+        "jestConfig": "packages/nx-sonar/jest.config.ts",
         "runInBand": true
       }
     }

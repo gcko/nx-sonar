@@ -16,7 +16,7 @@ export const extraProjectJson = `{
   "sourceRoot": "apps/app/src",
   "targets": {
     "sonar": {
-      "executor": "@koliveira15/nx-sonarqube:scan",
+      "executor": "@gcko/nx-sonar:scan",
       "options": {
         "hostUrl": "https://sonarcloud.io",
         "projectKey": "app",
@@ -29,7 +29,7 @@ export const extraProjectJson = `{
 }`;
 
 Sonar is a powerful tool for code quality analysis, offering insights into code health, bugs, vulnerabilities, and more.
-This document explains how scanning works with nx-sonarqube and Sonar.
+This document explains how scanning works with nx-sonar and Sonar.
 
 ## What is Included?
 
@@ -37,7 +37,7 @@ This document explains how scanning works with nx-sonarqube and Sonar.
 
 Working in a monorepo typically involves an application project and imported library projects. One of Nx's most
 important features is to calculate how projects depend on each other called the [dependency graph](https://nx.dev/nx-api/nx/documents/dep-graph#graph).
-The dependency graph is core to how the nx-sonarqube Nx Plugin can determine which projects to include in a given scan.
+The dependency graph is core to how the nx-sonar Nx Plugin can determine which projects to include in a given scan.
 
 There are three kinds of dependencies the graph can calculate:
 
@@ -121,7 +121,7 @@ Coverage paths should not be overridden as this is core feature of the plugin wh
 
 The Nx plugin wraps the [sonarqube-scanner](https://github.com/SonarSource/sonar-scanner-npm) npm package.
 Options for the scanner are passed in via the [executor properties](/reference/executors/scan/#options) into the
-[`getScannerOptions()`](https://github.com/koliveira15/nx-sonarqube/blob/main/packages/nx-sonarqube/src/executors/scan/utils/utils.ts) method of the plugin.
+[`getScannerOptions()`](https://github.com/gcko/nx-sonar/blob/main/packages/nx-sonar/src/executors/scan/utils/utils.ts) method of the plugin.
 
 The following sections are explain how to pass other options into the scanner outside the executor options:
 

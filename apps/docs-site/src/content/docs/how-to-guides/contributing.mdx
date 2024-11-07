@@ -2,7 +2,7 @@
 title: Contributing
 ---
 
-nx-sonarqube is an MIT-licensed open source project with its ongoing development made by contributors.
+nx-sonar is an MIT-licensed open source project with its ongoing development made by contributors.
 
 ## Setup Repository
 
@@ -13,7 +13,7 @@ on cloning a fork and creating a branch to work on
 
 ### Dependencies
 
-nx-sonarqube uses [npm](https://www.npmjs.com/) to manage its dependencies.
+nx-sonar uses [npm](https://www.npmjs.com/) to manage its dependencies.
 
 Before opening a pull request, run the following command from the root workspace folder to make sure your development dependencies are up-to-date:
 
@@ -25,57 +25,57 @@ npm ci
 
 ### Folder structure
 
-Source code for the nx-sonarqube plugin exists under the `packages/nx-sonarqube` folder. To contribute features or bug fixes to the framework, locate the relevant code in one of the `packages/nx-sonarqube` sub-folders.
+Source code for the nx-sonar plugin exists under the `packages/nx-sonar` folder. To contribute features or bug fixes to the framework, locate the relevant code in one of the `packages/nx-sonar` sub-folders.
 
 ### Running locally
 
 Run the following to serve the plugin and link the package to another consuming Nx workspace:
 
-#### nx-sonarqube Workspace
+#### nx-sonar Workspace
 
 Terminal one:
 
 ```shell
-npx nx build nx-sonarqube --watch
+npx nx build nx-sonar --watch
 ```
 
 Terminal two:
 
 ```shell
-cd dist/packages/nx-sonarqube
+cd dist/packages/nx-sonar
 npm link
 ```
 
 #### Consuming Nx Workspace
 
 ```shell
-npm link @koliveira15/nx-sonarqube
+npm link @gcko/nx-sonar
 ```
 
 ### Commands
 
 #### Build
 
-nx-sonarqube uses [Nx](https://nx.dev) for builds. To build the plugin locally, run the following command from the root folder:
+nx-sonar uses [Nx](https://nx.dev) for builds. To build the plugin locally, run the following command from the root folder:
 
 ```shell
-npx nx build nx-sonarqube
+npx nx build nx-sonar
 ```
 
 #### Unit Testing
 
-nx-sonarqube uses [Jest](https://jestjs.io) for tests. To test the plugin locally, run the following command from the root folder:
+nx-sonar uses [Jest](https://jestjs.io) for tests. To test the plugin locally, run the following command from the root folder:
 
 ```shell
-npx nx test nx-sonarqube
+npx nx test nx-sonar
 ```
 
 #### Linting
 
-nx-sonarqube uses [ESLint](https://eslint.org/) for linting. To lint the plugin locally, run the following command from the root folder:
+nx-sonar uses [ESLint](https://eslint.org/) for linting. To lint the plugin locally, run the following command from the root folder:
 
 ```shell
-npx nx lint nx-sonarqube
+npx nx lint nx-sonar
 ```
 
 #### E2E Testing
@@ -83,7 +83,7 @@ npx nx lint nx-sonarqube
 To e2e test the plugin locally, run the following command from the root folder:
 
 ```shell
-npx nx e2e nx-sonarqube-e2e
+npx nx e2e nx-sonar-e2e
 ```
 
 ## Contributing to the documentation and nx-sonarqube.dev website
@@ -96,7 +96,7 @@ The documentation site is built using:
 
 ### Folder structure
 
-Source code for the nx-sonarqube docs and the nx-sonarqube.dev website exists under the `apps/docs-site` project folder.
+Source code for the nx-sonar docs and the nx-sonarqube.dev website exists under the `apps/docs-site` project folder.
 To contribute documentation or website content, locate the relevant source code in one of the sub-folders:
 
 - `src/assets` - Images and other static assets
@@ -138,12 +138,12 @@ npx http-server dist/apps/docs-site
 - Follow the [Setup Repository](#setup-repository) steps above to make sure your forked development environment is up-to-date
 - Please ensure the test suite passes before submitting a PR.
 - If you've added new functionality, **please** include tests which validate its behavior.
-- Make reference to possible [issues](https://github.com/koliveira15/nx-sonarqube/issues) on PR comment.
+- Make reference to possible [issues](https://github.com/gcko/nx-sonar/issues) on PR comment.
 - PRs may include multiple commits. However, please keep content of all commits related. Raise separate PRs for disjoint changes.
 
 ### Bug Reports
 
-- Search through [issues](https://github.com/koliveira15/nx-sonarqube/issues) or [PRs](https://github.com/koliveira15/nx-sonarqube/pulls) to see if a previous issue has already been reported and/or fixed.
+- Search through [issues](https://github.com/gcko/nx-sonar/issues) or [PRs](https://github.com/gcko/nx-sonar/pulls) to see if a previous issue has already been reported and/or fixed.
 - Provide a _small_ reproduction using a GitHub repository.
 - Use the Bug issue template to open issues
 
@@ -162,4 +162,4 @@ commit will not pass pre-commit hooks if it's not followed.
 
 Questions and requests for support should not be opened as issues and should be handled in the following ways:
 
-- Start a new [Q&A Discussion](https://github.com/koliveira15/nx-sonarqube/discussions) on GitHub.
+- Start a new [Q&A Discussion](https://github.com/gcko/nx-sonar/discussions) on GitHub.

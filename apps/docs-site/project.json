@@ -13,10 +13,19 @@
       },
       "dependsOn": ["build-docs"]
     },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "configurations": {
+        "fix": {
+          "fix": true
+        }
+      }
+    },
     "build-docs": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "ts-node tools/scripts/build-tool-docs.ts"
+        "command": "ts-node --project tools/tsconfig.tools.json tools/scripts/build-tool-docs.ts"
       },
       "cache": true,
       "inputs": [
@@ -33,7 +42,7 @@
       "executor": "nx:run-commands",
       "options": {
         "commands": [
-          "nodemon --watch tools/scripts --watch packages/nx-sonarqube --exec ts-node tools/scripts/build-tool-docs.ts",
+          "nodemon --watch tools/scripts --watch packages/nx-sonar --exec ts-node tools/scripts/build-tool-docs.ts",
           "astro dev --root apps/docs-site"
         ],
         "parallel": true

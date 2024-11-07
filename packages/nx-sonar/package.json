@@ -1,20 +1,20 @@
 {
-  "name": "@koliveira15/nx-sonarqube",
+  "name": "@gcko/nx-sonar",
   "description": "A Nx plugin that scans projects using SonarQube / SonarCloud.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/koliveira15/nx-sonarqube.git",
-    "directory": "packages/nx-sonarqube"
+    "url": "https://github.com/gcko/nx-sonar.git",
+    "directory": "packages/nx-sonar"
   },
-  "version": "4.0.1",
+  "version": "5.0.0",
   "main": "src/index.js",
   "generators": "./generators.json",
   "executors": "./executors.json",
   "peerDependencies": {
-    "@nx/devkit": ">= 16 < 20",
-    "@phenomnomnominal/tsquery": "5.0.1",
+    "@nx/devkit": ">= 16 < 21",
+    "@phenomnomnominal/tsquery": "6.1.3",
     "sonarqube-scanner": "3.1.0",
-    "nx": ">= 16 < 20",
+    "nx": ">= 16 < 21",
     "tslib": ">= 2.3.0 < 3"
   }
 }

@@ -1,25 +1,25 @@
 {
-  "name": "nx-sonarqube-e2e",
+  "name": "nx-sonar-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "e2e/nx-sonarqube-e2e/tests",
+  "sourceRoot": "e2e/nx-sonar-e2e/tests",
   "targets": {
     "e2e": {
       "executor": "@nx/jest:jest",
       "options": {
-        "jestConfig": "e2e/nx-sonarqube-e2e/jest.config.ts",
+        "jestConfig": "e2e/nx-sonar-e2e/jest.config.ts",
         "runInBand": true,
         "passWithNoTests": false
       },
-      "dependsOn": ["nx-sonarqube:build"]
+      "dependsOn": ["nx-sonar:build"]
     },
     "sonar": {
-      "executor": "@koliveira15/nx-sonarqube:scan",
+      "executor": "@gcko/nx-sonar:scan",
       "options": {
-        "name": "nx-sonarqube",
+        "name": "nx-sonar",
         "hostUrl": "https://sonarcloud.io",
-        "organization": "koliveira15",
-        "projectKey": "nx-sonarqube",
+        "organization": "gcko",
+        "projectKey": "nx-sonar",
         "skipTargetDefaults": false,
         "branches": false,
         "qualityGate": true,
@@ -29,5 +29,5 @@
     }
   },
   "tags": [],
-  "implicitDependencies": ["nx-sonarqube"]
+  "implicitDependencies": ["nx-sonar"]
 }

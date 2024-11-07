@@ -1,5 +1,5 @@
 name: Feature Request
-description: Request a new or improved a feature in @koliveira15/nx-sonarqube
+description: Request a new or improved a feature in @gcko/nx-sonar
 labels: [enhancement]
 
 body:
@@ -7,14 +7,14 @@ body:
     attributes:
       value: |
         Thanks for submitting a feature request :white_check_mark:
-        Please search GitHub for a similar [issue](https://github.com/koliveira15/nx-sonarqube/issues) or [PR](https://github.com/koliveira15/nx-sonarqube/pulls) before submitting a new issue.
+        Please search GitHub for a similar [issue](https://github.com/gcko/nx-sonar/issues) or [PR](https://github.com/gcko/nx-sonar/pulls) before submitting a new issue.
 
   - type: dropdown
     id: type_feature
     attributes:
       label: Which scope/s are relevant/related to the feature request?
       options:
-        - "@koliveira15/nx-sonarqube"
+        - "@gcko/nx-sonar"
         - Astro Docs Site
         - Other
     validations:
@@ -24,7 +24,7 @@ body:
     id: information
     attributes:
       label: Information
-      description: Tell us what you want to be added to @koliveira15/nx-sonarqube
+      description: Tell us what you want to be added to @gcko/nx-sonar
     validations:
       required: true
 

@@ -1,0 +1,11 @@
+{
+  "extends": [
+    "../../.eslintrc.json"
+  ],
+  "parserOptions": {
+    "projectService": {
+      "defaultProject": "packages/nx-sonar/tsconfig.lib.json"
+    }
+  },
+  "ignorePatterns": ["!**/*", "node_modules/**/*"]
+}

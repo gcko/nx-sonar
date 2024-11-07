@@ -44,7 +44,7 @@ function jsonToMarkdown(jsonObject: JSONSchema, isExecutor: boolean): string {
     markdown += `<Code code={exampleFile} lang="json" title="project.json"/>\n\n`;
   } else {
     markdown +=
-      '```sh\nnpx nx g @koliveira15/nx-sonarqube:' +
+      '```sh\nnpx nx g @gcko/nx-sonar:' +
       jsonObject.title +
       '\n```\n\n';
   }
@@ -68,8 +68,8 @@ function jsonToMarkdown(jsonObject: JSONSchema, isExecutor: boolean): string {
 
 function main(): void {
   const schemas: JSONSchema[] = [
-    readJSONFile('packages/nx-sonarqube/executors.json'),
-    readJSONFile('packages/nx-sonarqube/generators.json'),
+    readJSONFile('packages/nx-sonar/executors.json'),
+    readJSONFile('packages/nx-sonar/generators.json'),
   ];
 
   for (const schema of schemas) {
@@ -88,7 +88,7 @@ function main(): void {
         const tool = schemaProperty[schemaKey];
         if (tool.schema) {
           const schemaPath = path.resolve(
-            'packages/nx-sonarqube/',
+            'packages/nx-sonar/',
             tool.schema.replace('./', '')
           );
           const markdown = jsonToMarkdown(readJSONFile(schemaPath), isExecutor);

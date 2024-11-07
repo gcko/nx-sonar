@@ -20,13 +20,13 @@ export default defineConfig({
       favicon: '/favicon.png',
       customCss: ['./src/styles/theme.css'],
       social: {
-        github: 'https://github.com/koliveira15/nx-sonarqube',
-        'x.com': 'https://twitter.com/koliveira15',
-        linkedin: 'https://www.linkedin.com/in/koliveira15/',
+        github: 'https://github.com/gcko/nx-sonar',
+        'x.com': 'https://x.com/JaredMScott',
+        linkedin: 'https://www.linkedin.com/in/jaredmscott/',
       },
       editLink: {
         baseUrl:
-          'https://github.com/koliveira15/nx-sonarqube/blob/main/apps/docs-site',
+          'https://github.com/gcko/nx-sonar/blob/main/apps/docs-site',
       },
       sidebar: [
         {
