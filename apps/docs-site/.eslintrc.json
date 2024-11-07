@@ -1,0 +1,6 @@
+{
+  "extends": [
+    "../../.eslintrc.json"
+  ],
+  "ignorePatterns": ["!**/*", "node_modules/**/*", "public/**/*", ".astro/**/*", "src/env.d.ts"]
+}

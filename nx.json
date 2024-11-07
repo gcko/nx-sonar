@@ -43,9 +43,9 @@
       "!{projectRoot}/src/test-setup.[jt]s"
     ]
   },
-  "nxCloudAccessToken": "MWM4ZWZiNDgtOGYwMi00ZDI3LTllMDUtYTNkYTExMmU3MDY2fHJlYWQ=",
   "parallel": 3,
   "defaultBase": "origin/main",
   "useInferencePlugins": false,
-  "useLegacyCache": true
+  "useLegacyCache": true,
+  "nxCloudId": "672c1afea0420f0078fe2fbb"
 }

@@ -5,7 +5,7 @@
   "sourceRoot": "apps/app/src",
   "targets": {
     "sonar": {
-      "executor": "@koliveira15/nx-sonarqube:scan",
+      "executor": "@gcko/nx-sonar:scan",
       "options": {
         "hostUrl": "https://sonarcloud.io",
         "projectKey": "app"

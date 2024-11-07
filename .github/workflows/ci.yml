@@ -15,13 +15,13 @@ jobs:
     secrets:
       NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
     with:
-      node-version: 20
+      node-version: 22
       main-branch-name: main
       number-of-agents: 3
       parallel-commands-on-agents: |
-        npx nx affected -t lint --parallel --exclude koliveira15
-        npx nx affected -t test --parallel --exclude koliveira15
-        npx nx affected -t build --parallel --exclude koliveira15
+        npx nx affected -t lint --parallel --exclude gcko
+        npx nx affected -t test --parallel --exclude gcko
+        npx nx affected -t build --parallel --exclude gcko
 
   agents:
     name: Nx Cloud - Agents
@@ -29,5 +29,5 @@ jobs:
     secrets:
       NX_CLOUD_ACCESS_TOKEN: ${{ secrets.NX_CLOUD_ACCESS_TOKEN }}
     with:
-      node-version: 20
+      node-version: 22
       number-of-agents: 3

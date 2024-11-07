@@ -1,3 +1,3 @@
-# @koliveira15/nx-sonarqube
+# @gcko/nx-sonar
 
 [Documentation](https://nx-sonarqube.dev/)

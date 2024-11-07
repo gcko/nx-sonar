@@ -1,4 +1,4 @@
-# @koliveira15/nx-sonarqube
+# @gcko/nx-sonar
 
 <img src='apps/docs-site/src/assets/radar.webp' width='300'>
 

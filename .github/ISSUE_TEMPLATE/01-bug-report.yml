@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a bug in @koliveira15/nx-sonarqube
+description: Report a bug in @gcko/nx-sonar
 labels: [bug]
 
 body:
@@ -7,7 +7,7 @@ body:
     attributes:
       value: |
         Thanks for reporting an issue :white_check_mark:
-        Please search GitHub for a similar [issue](https://github.com/koliveira15/nx-sonarqube/issues) or [PR](https://github.com/koliveira15/nx-sonarqube/pulls) before submitting a new issue.
+        Please search GitHub for a similar [issue](https://github.com/gcko/nx-sonar/issues) or [PR](https://github.com/gcko/nx-sonar/pulls) before submitting a new issue.
 
   - type: textarea
     id: environment
@@ -20,7 +20,7 @@ body:
     attributes:
       label: Which area/package is the issue in?
       options:
-        - "@koliveira15/nx-sonarqube"
+        - "@gcko/nx-sonar"
         - Astro Docs Site
         - Other
     validations:

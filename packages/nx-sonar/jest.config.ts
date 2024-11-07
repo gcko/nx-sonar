@@ -1,6 +1,6 @@
 /* eslint-disable */
 export default {
-  displayName: 'nx-sonarqube',
+  displayName: 'nx-sonar',
   preset: '../../jest.preset.js',
   globals: {},
   transform: {
@@ -12,5 +12,5 @@ export default {
     ],
   },
   moduleFileExtensions: ['ts', 'js', 'html', 'json'],
-  coverageDirectory: '../../coverage/packages/nx-sonarqube',
+  coverageDirectory: '../../coverage/packages/nx-sonar',
 };

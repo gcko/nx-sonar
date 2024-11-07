@@ -7,12 +7,12 @@ import sonarTargetJson from '../../../data/examples/executor.json?raw';
 import nxJson from '../../../data/examples/nx.json?raw';
 import terminalOutput from '../../../data/examples/terminal-output.txt?raw';
 
-This tutorial will demonstrate how to scan a project using the nx-sonarqube Nx Plugin and upload the results to Sonar
+This tutorial will demonstrate how to scan a project using the nx-sonar Nx Plugin and upload the results to Sonar
 
 ## Prerequisites
 
 1. [Nx workspace](https://nx.dev/getting-started/intro)
-2. [nx-sonarqube](/getting-started#installation)
+2. [nx-sonar](/getting-started#installation)
 3. [@nx/jest](https://nx.dev/nx-api/jest/executors/jest) or [@nx/vite](https://nx.dev/nx-api/vite/executors/test) test executors with code coverage enabled
 4. [Sonar](https://docs.sonarsource.com/sonarqube/latest/try-out-sonarqube/)
 
@@ -21,7 +21,7 @@ This tutorial will demonstrate how to scan a project using the nx-sonarqube Nx P
 1. Given the existing project to be scanned is named `app`, run the following generator:
 
    ```sh
-   npx nx g @koliveira15/nx-sonarqube:config app
+   npx nx g @gcko/nx-sonar:config app
    ```
 
 2. The generator will create the following changes:

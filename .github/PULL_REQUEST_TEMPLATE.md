@@ -22,7 +22,7 @@ What kind of change does this PR introduce?
 
 ## Which package are you modifying?
 
-- [ ] @koliveira15/nx-sonarqube
+- [ ] @gcko/nx-sonar
 - [ ] docs-site
 
 ## What is the current behavior?
